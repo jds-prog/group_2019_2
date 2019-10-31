@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let a, b, c, ab, ac, bc, k;
+
+        a = 12;
+        b = 700;
+        c = 14;
+
+        ab = a + b;
+        ac = a + c;
+        bc = b + c;
+
+        k = 0;
+
+        if(ab > c) {
+            k += 1;
+        }
+
+        if(ac > b) {
+            k += 1;
+        }
+
+        if(bc > a) {
+            k += 1;
+        }
+
+        if(k === 3) {
+            console.log("Треугольник существует");
+        } else {
+            console.log("Нельзя сделать треугольник");
+        }
+    }
+</script>
+    
+</body>
+</html>

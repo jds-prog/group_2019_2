@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let arr, i;
+
+        arr = [];
+
+        arr[0] = 12;
+        arr[1] = 17;
+        arr[2] = -4;
+        arr[3] = 51;
+        arr[4] = -8;
+
+        console.log("Размер: " + arr.length);
+
+        for(i = 0; i < arr.length; i++) {
+            console.log("Значение ячейки: " + arr[i]);
+        }
+
+        arr[2] = 200;
+        arr[3] = 300;
+
+        console.log("После изменения ячеек");
+
+        for(i = 0; i < arr.length; i++) {
+            console.log("Значение ячейки: " + arr[i]);
+        }
+    }
+</script>
+    
+</body>
+</html>

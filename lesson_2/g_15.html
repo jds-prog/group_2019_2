@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let a, i, ost, x;
+
+        a = 7;
+
+        x = 1;
+
+        for(i = 2; i < a; i++) {
+            ost = parseInt(a % i);
+            if(ost === 0) {
+                x = -1;
+            }
+        }
+
+        if(x === 1) {
+            console.log("Число - простое");
+        } else {
+            console.log("Число НЕ является простым");
+        }
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let a, b, i, ost;
+
+        a = 12;
+        b = 18;
+
+        console.log("Chetn chisla");
+        i = a;
+
+        while(i <= b) {
+            ost = parseInt(i % 2);
+            if(ost === 0) {
+                console.log(i);
+            }
+            i = i + 1;
+        }
+
+        console.log("Nechetn chisla");
+        i = a;
+
+        while(i <= b) {
+            ost = parseInt(i % 2);
+            if(ost !== 0) {
+                console.log(i);
+            }
+            i = i + 1;
+        }
+
+        console.log("Program finish");
+    }
+</script>
+    
+</body>
+</html>

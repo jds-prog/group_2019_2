@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let arrFirst, arrSecond, i, k;
+
+        arrFirst = [];
+        arrSecond = [];
+
+        arrFirst[0] = 300;
+        arrFirst[1] = 200;
+        arrFirst[2] = -7;
+        arrFirst[3] = -3;
+        arrFirst[4] = 500;
+        arrFirst[5] = -8;
+        arrFirst[6] = -2;
+
+        k = 0;
+
+        for(i = 0; i < arrFirst.length; i++) {
+            if(arrFirst[i] < 0) {
+                arrSecond[k] = arrFirst[i];
+                k = k + 1;
+            }
+        }
+
+        for(i = 0; i < arrSecond.length; i++) {
+            console.log(arrSecond[i]);
+        }
+    }
+</script>
+    
+</body>
+</html>
