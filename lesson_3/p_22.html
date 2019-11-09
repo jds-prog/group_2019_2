@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let arr = [];
+
+        arr[0] = 14;
+        arr[1] = -30;
+        arr[2] = 20;
+        arr[3] = 30;
+        arr[4] = 123;
+        arr[5] = -40;
+        arr[6] = 18;
+
+        let k = 0;
+
+        for(let i = 0; i < arr.length; i++) {
+            let ost = parseInt(arr[i] % 2);
+            if(arr[i] > 0) {
+                if(ost === 0) {
+                    console.log(arr[i]);
+                    k++;
+                }
+            }
+        }
+
+        console.log("K: " + k);
+    }
+</script>
+    
+</body>
+</html>

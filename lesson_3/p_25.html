@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    function getModule(p) {
+        let x = p;
+        if(x < 0) {
+            x = x * (-1);
+        }
+        return x;
+    }
+
+    function getSumModules(mass) {
+        let s = 0;
+        for(let i = 0; i < mass.length; i++) {
+            let m = getModule(mass[i]);
+            s = s + m;
+        }
+        return s;
+    }
+
+    window.onload = function() {
+        let arr = [];
+
+        arr[0] = 15;
+        arr[1] = -9;
+        arr[2] = -2;
+        arr[3] = 30;
+        arr[4] = 0;
+        arr[5] = -7;
+
+        let result = getSumModules(arr);
+        console.log("Результат: " + result);
+    }
+</script>
+    
+</body>
+</html>

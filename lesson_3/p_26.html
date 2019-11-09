@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let globalA = 100;
+
+    function addValue(x) {
+        globalA = globalA + x;
+    }
+
+    window.onload = function() {
+        console.log("Начальное значение: " + globalA);
+
+        addValue(3);
+        addValue(20);
+        addValue(4);
+
+        console.log("Конечное значение: " + globalA);
+    }
+</script>
+    
+</body>
+</html>
