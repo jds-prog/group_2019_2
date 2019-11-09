@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<h1>Сумма чисел</h1>
+
+<p>Первое число</p>
+<input id = "t1" type = "text">
+
+<p>Второе число</p>
+<input id = "t2" type = "text">
+
+<br>
+<br>
+
+<button id = "btn">Получить сумму</button>
+
+<h1 id = "t3"></h1>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let t1 = document.getElementById("t1");
+        let t2 = document.getElementById("t2");
+        let btn = document.getElementById("btn");
+        let t3 = document.getElementById("t3");
+
+        btn.onclick = function() {
+            let a = parseInt(t1.value);
+            let b = parseInt(t2.value);
+            let s = a + b;
+            t3.innerHTML = s;
+        }
+    }
+</script>
+    
+</body>
+</html>
