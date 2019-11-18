@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let s1 = "hello";
+        let s2 = "university";
+
+        if(s1 === s2) {
+            console.log("Строки одинаковые");
+        } else {
+            console.log("Строки разные");
+        }
+
+        let sBig = s1 + s2;
+        console.log("Большая строка: " + sBig);
+
+        let n = sBig.length;
+        console.log("Длина строки: " + n);
+
+        let name = "Maxim";
+        let age = 105;
+
+        let message = `Man ${name} is ${age} years old`;
+        console.log(message);
+    }
+</script>
+    
+</body>
+</html>

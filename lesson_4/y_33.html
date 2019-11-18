@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<h1 id = "firstElement">We love JavaScript</h1>
+
+<button id = "btn">Изменить цвет</button>
+
+<script>
+    "use strict";
+
+    let colorCount = 0;
+
+    window.onload = function() {
+        let firstElement = document.getElementById("firstElement");
+        let btn = document.getElementById("btn");
+
+        firstElement.style.color = "#FF0000";
+
+        btn.onclick = function() {
+            colorCount = colorCount + 1;
+            let ost = parseInt(colorCount % 3);
+
+            if(ost === 0) {
+                firstElement.style.color = "#FF0000";
+            }
+
+            if(ost === 1) {
+                firstElement.style.color = "#00FF00";
+            }
+
+            if(ost === 2) {
+                firstElement.style.color = "#0000FF";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
+

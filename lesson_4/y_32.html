@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<h1 id = "label">Hello world</h1>
+
+<button id = "btn">Скрыть надпись</button>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let label = document.getElementById("label");
+        let btn = document.getElementById("btn");
+
+        btn.onclick = function() {
+            if(label.hidden === false) {
+                label.hidden = true;
+                btn.innerHTML = "Показать надпись";
+            } else {
+                label.hidden = false;
+                btn.innerHTML = "Скрыть надпись";
+            }
+        }
+    }
+</script>
+    
+</body>
+</html>

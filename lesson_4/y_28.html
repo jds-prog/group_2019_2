@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>Проект</title>
+</head>
+<body>
+
+<h1>Калькулятор</h1>
+
+<p>Число А</p>
+<input id = "fieldA" type = "text">
+
+<p>Число Б</p>
+<input id = "fieldB" type = "text">
+
+<br>
+<br>
+
+<select id = "fieldC" size = "3">
+    <option selected value = "0">Сумма</option>
+    <option value = "1">Разность</option>
+    <option value = "2">Произведение</option>
+</select>
+
+<br>
+<br>
+
+<button id = "btn">Получить результат</button>
+
+<h1 id = "fieldResult"></h1>
+
+<script>
+    "use strict";
+
+    window.onload = function() {
+        let fieldA = document.getElementById("fieldA");
+        let fieldB = document.getElementById("fieldB");
+        let fieldC = document.getElementById("fieldC");
+        let btn = document.getElementById("btn");
+        let fieldResult = document.getElementById("fieldResult");
+
+        btn.onclick = function() {
+            let a = parseInt(fieldA.value);
+            let b = parseInt(fieldB.value);
+            let c = parseInt(fieldC.value);
+
+            console.log("Число А: " + a);
+            console.log("Число B: " + b);
+            console.log("Номер операция: " + c);
+
+            if(c === 0) {
+                let result = a + b;
+                fieldResult.innerHTML = result;
+            }
+
+            if(c === 1) {
+                let result = a - b;
+                fieldResult.innerHTML = result;
+            }
+
+            if(c === 2) {
+                let result = a * b;
+                fieldResult.innerHTML = result;
+            }
+        }
+    }
+</script>
+    
+</body>
+</html>
